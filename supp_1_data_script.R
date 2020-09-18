@@ -13,17 +13,14 @@ behavior <- 3
 
 behavior_label <- c("groom", "support","forage")
 
+if( behavior < 3)
+    # for either grooming or support - directed_matrix.csv
+    directed_import <- read.csv ( file = "./directed_matrix.csv")
 
-if( behavior < 3 ){
-  
-  # for either grooming or support - directed_matrix.csv
-  directed_import <- read.csv ( file = "./directed_matrix.csv")
-  
-  # model code
-  source("supp_directed_model0.R")
-  
-  if( behavior==1){# grooming
-    
+    # model code
+    source("supp_directed_model0.R")
+
+if(behavior ==  1) #for grooming
     # subset to cases where a dyad had an opportunity to groom
     dat <- subset( directed_import, !is.na(groom) )
     
@@ -31,18 +28,15 @@ if( behavior < 3 ){
     colnames(dat)[colnames(dat) == "groom"] <- "count"
     colnames(dat)[colnames(dat) == "groom_exposure"] <- "exposure"
     
-  }else{# support in coaltionary aggression
-    
+if(behavior ==  2) #for coalitionary support
     # subset to cases where a dyad had an opportunity to support in coalitionary aggression
     dat <- subset (directed_import, !is.na(support) )
     
     # rename columns
     colnames(dat)[colnames(dat) == "support"] <- "count"
     colnames(dat)[colnames(dat) == "support_exposure"] <- "exposure"
-  }
   
-}else{
-  
+if(behavior == 3)#  for foraging
   # for foraging -- undirected_matrix.csv
   undirected_import <- read.csv ( file = "./undirected_matrix.csv")
   
@@ -55,7 +49,6 @@ if( behavior < 3 ){
   # rename some columns
   colnames(dat)[colnames(dat) == "forage"] <- "count"
   colnames(dat)[colnames(dat) == "forage_exposure"] <- "exposure"
-}
 
 
 #############################################################
@@ -116,9 +109,6 @@ start.time <- Sys.time()
 m0 <- stan( model_code=model_code_0 , data = dat_list , chains=n_chains , cores=n_cores, warmup = n_warmup, iter = n_iter, thin = n_thin, control=list(adapt_delta=0.99))
 end.time <- Sys.time()
 end.time - start.time
-
-# Grooming: Time difference of 4.48655 hours
-# Support: Time difference of 8.935623 hours
 
 # save model object and summary 
 save( m0, file=paste0("m0",behavior_label[behavior],".RDATA" ) )
