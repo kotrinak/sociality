@@ -1,6 +1,6 @@
 
 # Kotrina Kajokaite
-# Bayesian Cox Proportional Hazard model 
+# Bayesian accelerated failure time model 
 
 ######################################################
 # load packages
