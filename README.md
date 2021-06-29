@@ -1,4 +1,4 @@
-Analysis materials for Kajokaite et al., "Fitness benefits of providing services to others: Sociality predicts survival in a neotropical primate".
+Analysis materials for Kajokaite et al., "Fitness benefits of providing services to others: Grooming predicts survival in a neotropical primate".
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5040066.svg)](https://doi.org/10.5281/zenodo.5040066)
 
