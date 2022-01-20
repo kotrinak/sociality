@@ -26,12 +26,11 @@ In R, set the working directory to that containing this readme file. For example
   setwd('~/Desktop/Sociality')
 ```
 
-if the folder containing the project is named 'Sociality' and on your Desktop. 
+if the folder containing the project is named 'Sociality' on your Desktop. Inside this folder create an empty folder "Outputs".
 
 The analysis itself is broken up into independent modules and can be replicated by running "Run_all.R" script.
 
-
-If all goes well, each step of the analysis will execute in sequence, and write the final tables and figures into the same folder as everything else. 
+If all goes well, each step of the analysis will execute in sequence, and write the final tables and figures into the "Outputs" folder. 
 
 The total time until completion will vary by machine but should take several hours. Social Relations Models take longer to fit than anything else.
 
