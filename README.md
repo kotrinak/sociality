@@ -1,6 +1,6 @@
 Analysis materials for "Social integration predicts survival in female white-faced capuchin monkeys", by Kotrina Kajokaite, Andrew Whalen, Jeremy Koster and Susan Perry.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5885634.svg)](https://doi.org/10.5281/zenodo.5885634)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6426106.svg)](https://doi.org/10.5281/zenodo.6426106)
 
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
