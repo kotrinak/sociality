@@ -3,9 +3,9 @@ Analysis materials for "Social integration predicts survival in female white-fac
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5885634.svg)](https://doi.org/10.5281/zenodo.5885634)
 
 
-[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
 
-This code was written by Kotrina Kajokaite, Andrew Whalen, and Jeremy Koster and is available under Creative Commons [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). See LICENSE.md for details.
+This code was written by Kotrina Kajokaite, Andrew Whalen, and Jeremy Koster and is available under Creative Commons [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See LICENSE.md for details.
 
 
 # Requirements
